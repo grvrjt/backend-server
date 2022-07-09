@@ -8,7 +8,7 @@ export class UsersController {
 
   @Post()
   async saveUser(@Body() userData: User) {
-    const result = this.usersService.saveUser(userData);
+    const result = await this.usersService.saveUser(userData);
     return {
       success: true,
       payload: result,

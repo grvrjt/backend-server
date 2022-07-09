@@ -12,11 +12,10 @@ import {
 
 @Injectable({ scope: Scope.REQUEST })
 export class TypegooseConfigService implements TypegooseOptionsFactory {
-  constructor(@Inject(REQUEST) private readonly request) {}
+  constructor(@Inject(REQUEST) private readonly request) { }
   createTypegooseOptions():
     | Promise<TypegooseModuleOptions>
     | TypegooseModuleOptions {
-    // throw new Error("Method not implemented.");
     let domain: string[];
     let database = 'database_development';
     if (this.request.data) {

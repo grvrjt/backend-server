@@ -27,6 +27,7 @@
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/swagger": "^6.0.0",
     "@typegoose/typegoose": "^9.10.1",
+    "bcrypt": "^5.0.1",
     "mongoose": "^6.4.3",
     "nest-winston": "^1.6.2",
     "nestjs-typegoose": "^7.1.38",

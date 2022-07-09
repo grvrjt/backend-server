@@ -28,5 +28,22 @@ export class User {
     default: null,
   })
   fullName: string;
+
+  @ApiProperty()
+  @prop({
+    type: String,
+    trim: true,
+    default: null,
+  })
+  email: string;
+
+  @ApiProperty()
+  @prop({
+    type: String,
+    trim: true,
+    default: null,
+  })
+  password: string;
+
 }
-  
+
